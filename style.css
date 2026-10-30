@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #191A1F;
+    color: #E2E1E6;
+}
+
+header {
+    background-color: #25262D;
+    padding: 25px 8%;
+    border-bottom: 1px solid #393A43;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.cabecalho h1 span {
+    color: #A69BBE;
+}
+
+.cabecalho p {
+    margin-bottom: 0;
+    color: #AAA9B1;
+    font-size: 14px;
+}
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.introducao {
+    margin-bottom: 30px;
+}
+
+.categoria {
+    color: #A69BBE;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.introducao h2 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.introducao > p:last-child {
+    color: #AAA9B1;
+    line-height: 1.6;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    background-color: #25262D;
+    border: 1px solid #393A43;
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.produto:hover {
+    border-color: #827692;
+}
+
+.numero {
+    color: #AAA9B1;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.icone {
+    font-size: 35px;
+    margin: 25px 0 15px;
+}
+
+.produto h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    color: #E2E1E6;
+}
+
+.produto p {
+    color: #AAA9B1;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+.preco {
+    margin-top: auto;
+    padding-top: 15px;
+    color: #A3B7A1;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.compra {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #25262D;
+    border-left: 3px solid #827692;
+    border-radius: 4px;
+}
+
+.compra h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.compra p {
+    color: #AAA9B1;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #655D78;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #766C8C;
+}
+
+button:focus-visible {
+    outline: 2px solid #C3B6DC;
+    outline-offset: 3px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 22px;
+    border-top: 1px solid #393A43;
+    text-align: center;
+    color: #AAA9B1;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    main {
+        width: 90%;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao h2 {
+        font-size: 28px;
+    }
+
+    header {
+        padding: 22px 5%;
+    }
+}
